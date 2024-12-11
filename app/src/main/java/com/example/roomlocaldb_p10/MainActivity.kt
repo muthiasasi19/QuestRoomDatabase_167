@@ -14,19 +14,21 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.roomlocaldb_p10.ui.navigation.PengelolaHalaman
 import com.example.roomlocaldb_p10.ui.theme.RoomLocalDB_P10Theme
 
+
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            RoomLocalDB_P10Theme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    PengelolaHalaman(
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+            RoomLocalDB_P10Theme { Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                PengelolaHalaman(
+                    modifier = Modifier.padding(innerPadding)
+                )
             }
-        }
+            }
+
+            }
     }
 }
 
@@ -43,5 +45,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 fun GreetingPreview() {
     RoomLocalDB_P10Theme {
         Greeting("Android")
+
     }
 }
