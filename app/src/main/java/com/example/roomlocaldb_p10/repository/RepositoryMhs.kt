@@ -4,7 +4,7 @@ import com.example.roomlocaldb_p10.data.entity.Mahasiswa
 import kotlinx.coroutines.flow.Flow
 
 interface RepositoryMhs {
-    suspend fun insertMhs(mahasiswa: Mahasiswa)
+
 
     //untuk mendapatkan semua data mahasiswa dalam bentuk aliran data (flow)
     fun getAllMhs (): Flow<List<Mahasiswa>>
@@ -17,5 +17,7 @@ interface RepositoryMhs {
 
     // untuk memperbarui data mahasiswa didatabase
     suspend fun updateMhs(mahasiswa: Mahasiswa)
+
+    suspend fun insertMhs(mahasiswa: Mahasiswa)
 
 }

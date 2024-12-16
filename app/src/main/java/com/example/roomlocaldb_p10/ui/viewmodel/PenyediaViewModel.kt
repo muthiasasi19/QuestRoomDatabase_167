@@ -1,12 +1,12 @@
 package com.example.roomlocaldb_p10.ui.viewmodel
 
+import HomeMhsViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.createSavedStateHandle
 import androidx.lifecycle.viewmodel.CreationExtras
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import com.example.roomlocaldb_p10.KrsApp
-import com.example.roomlocaldb_p10.ui.view.mahasiswa.HomeMhsViewModel
 
 object PenyediaViewModel {
     val Factory = viewModelFactory {

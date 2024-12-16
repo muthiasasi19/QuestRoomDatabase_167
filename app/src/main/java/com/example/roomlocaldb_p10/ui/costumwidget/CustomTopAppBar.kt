@@ -19,12 +19,12 @@ fun CustomTopAppBar(
     onBack: () -> Unit,
     showBackButton: Boolean = true,
     judul: String,
-    modifier: Modifier,
+
 ) {
     Box(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(16.dp),
+            .padding(horizontal = 16.dp),
         contentAlignment = Alignment.Center // Pastikan konten di tengah
     ) {
         if (showBackButton) {
@@ -36,7 +36,7 @@ fun CustomTopAppBar(
                     onClick = onBack,
                     modifier = Modifier.align(Alignment.CenterVertically)
                 ) {
-                    Text("Kembali")
+                    Text("Kembali", modifier = Modifier.padding(top = 26.dp))
                 }
                 Spacer(modifier = Modifier.weight(2f))
             }
@@ -47,7 +47,7 @@ fun CustomTopAppBar(
             text = judul,
             fontSize = 25.sp,
             fontWeight = FontWeight.Bold,
-            modifier = Modifier.align(Alignment.Center)
+            modifier = Modifier.align(Alignment.Center).padding(top = 30.dp)
         )
     }
 }

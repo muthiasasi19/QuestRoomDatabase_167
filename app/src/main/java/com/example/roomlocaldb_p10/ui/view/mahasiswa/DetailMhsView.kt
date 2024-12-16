@@ -32,10 +32,12 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.roomlocaldb_p10.data.entity.Mahasiswa
+import com.example.roomlocaldb_p10.ui.costumwidget.CustomTopAppBar
 import com.example.roomlocaldb_p10.ui.viewmodel.DetailMhsViewModel
 import com.example.roomlocaldb_p10.ui.viewmodel.DetailUiState
 import com.example.roomlocaldb_p10.ui.viewmodel.PenyediaViewModel
 import com.example.roomlocaldb_p10.ui.viewmodel.toMahasiswaEntity
+
 
 @Composable
 fun DetailMhsView(
@@ -75,10 +77,6 @@ fun DetailMhsView(
             }
         )
     }
-}
-
-fun CustomTopAppBar(judul: String, showBackButton: Boolean, onBack: () -> Unit) {
-    TODO("Not yet implemented")
 }
 
 @Composable
@@ -167,6 +165,7 @@ fun ItemDetailMhs(
             ComponentDetailMhs(judul = "Kelas", isinya = mahasiswa.kelas)
             Spacer(modifier =Modifier.padding(5.dp))
             ComponentDetailMhs(judul = "Angkatan", isinya = mahasiswa.angkatan)
+
         }
     }
 }

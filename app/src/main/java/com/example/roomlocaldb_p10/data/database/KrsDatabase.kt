@@ -27,7 +27,7 @@ abstract class KrsDatabase : RoomDatabase() {
                     "KrsDatabase" // Nama Database
                 )
                     .build().also { Instance = it }
-                })
-            }
+            })
+        }
     }
 }

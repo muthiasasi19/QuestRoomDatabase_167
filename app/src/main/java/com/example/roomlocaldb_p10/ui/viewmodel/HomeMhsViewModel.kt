@@ -42,6 +42,7 @@ class HomeMhsViewModel (
             HomeUiState(isLoading = true)
         )
 }
+
 data class HomeUiState(
     val listMhs: List<Mahasiswa> = listOf(),
     val isLoading: Boolean = false,

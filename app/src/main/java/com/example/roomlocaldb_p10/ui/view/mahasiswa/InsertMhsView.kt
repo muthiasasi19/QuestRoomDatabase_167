@@ -75,7 +75,7 @@ fun InsertMhsView(
                 onBack = onBack,
                 showBackButton = true,
                 judul = "Tambah Mahasiswa",
-                modifier = modifier
+
             )
 
             //Isi Body

@@ -17,7 +17,6 @@ class UpdateMhsViewModel (
     savedStateHandle: SavedStateHandle,
     private val repositoryMhs: RepositoryMhs
 ) : ViewModel(){
-
     var updateUiState by mutableStateOf(MhsUIState())
         private set
 

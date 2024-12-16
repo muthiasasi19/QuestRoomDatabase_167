@@ -1,6 +1,6 @@
 package com.example.roomlocaldb_p10.ui.view.mahasiswa
 
-import CustomTopAppBar
+
 import HomeMhsViewModel
 import HomeUiState
 import androidx.compose.foundation.layout.Box
@@ -39,6 +39,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.roomlocaldb_p10.data.entity.Mahasiswa
+import com.example.roomlocaldb_p10.ui.costumwidget.CustomTopAppBar
 import com.example.roomlocaldb_p10.ui.viewmodel.PenyediaViewModel
 import kotlinx.coroutines.launch
 
@@ -137,8 +138,6 @@ fun BodyHomeMhsView(
     }
 }
 
-
-
 @Composable
 fun ListMahasiswa(
     listMhs: List<Mahasiswa>,
@@ -158,7 +157,6 @@ fun ListMahasiswa(
         )
     }
 }
-
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CardMhs(
