@@ -74,7 +74,8 @@ fun InsertMhsView(
             CustomTopAppBar(
                 onBack = onBack,
                 showBackButton = true,
-                judul = "Tambah Mahasiswa"
+                judul = "Tambah Mahasiswa",
+                modifier = modifier
             )
 
             //Isi Body
