@@ -40,3 +40,8 @@ Update data
 
 Setelah update data (Alamat)
 ![Gambar WhatsApp 2024-12-16 pukul 22 53 46_2c34b279](https://github.com/user-attachments/assets/3ff776c2-ee88-4373-bbcd-902e2360290b)
+
+
+Database
+![Cuplikan layar 2024-12-16 225252](https://github.com/user-attachments/assets/8547916b-5297-435d-8d1d-ef71b71b99d2)
+
